@@ -4,8 +4,11 @@ import br.com.ebac.animalservice.entidades.Animal;
 import br.com.ebac.animalservice.repositorios.AnimalRepository;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
+import java.time.LocalDate;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/animais")
@@ -45,5 +48,22 @@ public class AnimalController {
     @GetMapping("/cats")
     private List<Animal> findCats() {
         return repository.findCats();
+    }
+
+    @GetMapping("/rescue-count")
+    private List<Map<String, Object>> getAnimalRescueCount(@RequestParam LocalDate startDate) {
+
+        LocalDate endDate = startDate.plusYears(1);
+
+        List<Object[]> results = repository.findAnimalCountByRecebedorAndDateRange(startDate, endDate);
+
+        return results.stream()
+                .map(result -> {
+                    Map<String, Object> map = new HashMap<>();
+                    map.put("recebedor", result[0]);
+                    map.put("count", result[1]);
+                    return map;
+                })
+                .collect(Collectors.toList());
     }
 }

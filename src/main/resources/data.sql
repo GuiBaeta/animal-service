@@ -23,33 +23,33 @@ VALUES
 INSERT INTO
     animal
     (nome_provisorio, idade_estimada, especie, raca, data_entrada, condicoes_chegada, nome_recebedor, porte)
-VALUES ('Cachorrinho Feliz', '3', 'CACHORRO', 'Beagle', current_date, 'Bem disposto', 'Maria', 'Médio');
+VALUES ('Cachorrinho Feliz', '3', 'CACHORRO', 'Beagle', current_date, 'Bem disposto', 'Cleber', 'Médio');
 
 INSERT INTO
     animal
     (nome_provisorio, idade_estimada, especie, raca, data_entrada, condicoes_chegada, nome_recebedor, porte)
-VALUES ('Peludo', '7', 'CACHORRO', 'Golden Retriever', current_date - 5, 'Peludo e animado', 'João', 'Grande');
+VALUES ('Peludo', '7', 'CACHORRO', 'Golden Retriever', current_date - 5, 'Peludo e animado', 'Giovanna', 'Grande');
 
 -- Gatos
 INSERT INTO
     animal
     (nome_provisorio, idade_estimada, especie, raca, data_entrada, condicoes_chegada, nome_recebedor, porte)
-VALUES ('Miau', '1', 'GATO', 'Persa', current_date, 'Bem fofinho', 'Cláudia', 'Pequeno');
+VALUES ('Miau', '1', 'GATO', 'Persa', current_date, 'Bem fofinho', 'Fábio', 'Pequeno');
 
 INSERT INTO
     animal
     (nome_provisorio, idade_estimada, especie, raca, data_entrada, condicoes_chegada, nome_recebedor, porte)
-VALUES ('Gatinho Agressivo', '4', 'GATO', 'Siamês', current_date - 3, 'Desconfiado, mas carinhoso', 'Lucas', 'Médio');
+VALUES ('Gatinho Agressivo', '4', 'GATO', 'Siamês', current_date - 3, 'Desconfiado, mas carinhoso', 'Cleber', 'Médio');
 
 INSERT INTO
     animal
     (nome_provisorio, idade_estimada, especie, raca, data_entrada, condicoes_chegada, nome_recebedor, porte)
-VALUES ('Felix', '6', 'GATO', 'Maine Coon', current_date - 2, 'Acalmado e sociável', 'Carla', 'Grande');
+VALUES ('Felix', '6', 'GATO', 'Maine Coon', current_date - 2, 'Acalmado e sociável', 'Fábio', 'Grande');
 
 INSERT INTO
     animal
     (nome_provisorio, idade_estimada, especie, raca, data_entrada, condicoes_chegada, nome_recebedor, porte)
-VALUES ('Tigrinha', '3', 'GATO', 'Vira-lata', current_date - 7, 'Misteriosa e muito rápida', 'Renata', 'Pequeno');
+VALUES ('Tigrinha', '3', 'GATO', 'Vira-lata', current_date - 7, 'Misteriosa e muito rápida', 'Giovanna', 'Pequeno');
 
 INSERT INTO
     animal
