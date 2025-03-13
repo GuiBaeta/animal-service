@@ -36,4 +36,14 @@ public class AnimalController {
     private List<Animal> findAdopted() {
         return repository.findAdopted();
     }
+
+    @GetMapping("/dogs")
+    private List<Animal> findDogs() {
+        return repository.findDogs();
+    }
+
+    @GetMapping("/cats")
+    private List<Animal> findCats() {
+        return repository.findCats();
+    }
 }

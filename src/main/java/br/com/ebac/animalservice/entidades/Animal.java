@@ -1,5 +1,6 @@
 package br.com.ebac.animalservice.entidades;
 
+import br.com.ebac.animalservice.enums.Especie;
 import jakarta.persistence.*;
 
 import java.sql.Date;
@@ -22,6 +23,10 @@ public class Animal {
 
     @Column(nullable = false)
     private Integer idadeEstimada;
+
+    @Column(nullable = false)
+    @Enumerated(EnumType.STRING)
+    private Especie especie;
 
     @Column(nullable = false)
     private String raca;
@@ -114,5 +119,13 @@ public class Animal {
 
     public void setPorte(String porte) {
         this.porte = porte;
+    }
+
+    public Especie getEspecie() {
+        return especie;
+    }
+
+    public void setEspecie(Especie especie) {
+        this.especie = especie;
     }
 }
